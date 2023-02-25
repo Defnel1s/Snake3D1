@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabPlane: {fileID: 7998948270250033854, guid: 4ace6ed52ffcb9a418091f48ffe7495a, type: 3}
-  PlaneCount: 20
+  PlaneCount: 15
   CoinPrefab: {fileID: 7856764799516913803, guid: 649669b6736460d46afbcd886455ffb1, type: 3}
   CoinCount: 5
   minDistance: 1

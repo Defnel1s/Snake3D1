@@ -68,13 +68,13 @@ public class Generator : MonoBehaviour
     }
     public void SpawnCube()
     {
-        Vector3 vector = Clone.transform.position - new Vector3(Clone.transform.localScale.x / 2.5f, Clone.transform.localScale.y / 2) + CubePrefab.transform.localScale.y * Vector3.up;
+        Vector3 vector = Clone.transform.position - new Vector3((Clone.transform.localScale.x / 3)+0.5f, Clone.transform.localScale.y / 2) + CubePrefab.transform.localScale.y * Vector3.up;
 
         for (int i = 0; i < CubeCount; i++)
         {
-            for (int j = 0; j < 11; j++)
+            for (int j = 0; j < 10; j++)
             {
-                if(Random.Range(1, 101) < 20)
+                if(Random.Range(1, 101) < 25)
                 {
                     Instantiate(CubePrefab, vector + CubePrefab.transform.localScale.x * j * Vector3.right, Quaternion.identity);
                 }
